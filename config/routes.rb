@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  # get 'showcases/index'
+  # get 'showcases/new'
+
+  root 'showcases#index'
+  resources :showcases
+  # match '/new', to: 'showcases#new', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
