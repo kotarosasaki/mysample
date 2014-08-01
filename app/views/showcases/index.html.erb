@@ -1,9 +1,9 @@
 <h1>All Showcases</h1>
 
 <ul class="showcases">
-  <%= @showcases.each do |showcase| %>
+  <% @showcases.each do |s| %>
     <li>
-      <%= link_to showcase.casetag, showcase %>
+      <%= link_to s.casetag, s %>, <%= s.casetag %>, <%= s.case_id %>
     </li>
   <% end %>
 </ul>

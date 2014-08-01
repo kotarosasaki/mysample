@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'showcases#index'
   resources :showcases
   # match '/new', to: 'showcases#new', via: 'get'
+  match '/index', to: 'showcases#index', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
